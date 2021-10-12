@@ -2,9 +2,11 @@
 using MyFace.Models.Request;
 using MyFace.Models.Response;
 using MyFace.Repositories;
+using MyFace.Services;
 
 namespace MyFace.Controllers
 {
+    [BasicAuthorisation]
     [ApiController]
     [Route("/users")]
     public class UsersController : ControllerBase
